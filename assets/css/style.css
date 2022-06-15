@@ -66,62 +66,40 @@ button:hover {
     padding: 80px;
 }
 
-#content {
+#body {
+    padding: 25px 10%;
+}
+#body div:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.flex {
     display: flex;
+}
+
+.flex-col {
     flex-direction: column;
-    gap: 80px;
+}
+
+.flex-1 {
+    flex:1;
+}
+
+.flex-row-rev {
+    flex-direction: row-reverse;
+}
+
+.w-100 {
     width: 100%;
-    padding: 25px 240px 25px;
 }
 
-#content .first-content {
-    display: flex;
+.gap {
     gap: 80px;
 }
 
-#content .first-content .first-content-img, .first-content-text {
-    flex: 1;
-}
-
-#content .second-content {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 80px;
-}
-
-#content .second-content .second-content-img, .second-content-text {
-    flex: 1;
-}
-
-#content .third-content {
-    display: flex;
-    gap: 80px;
-}
-
-#content .third-content .third-content-img, .third-content-text {
-    flex: 1;
-}
-
-#content .fourth-content {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 80px;
-}
-
-#content .fourth-content .fourth-content-img, .fourth-content-text {
-    flex: 1;
-}
-
-#content .fifth-content {
-    display: flex;
-    gap: 80px;
-}
-#content .fifth-content .fifth-content-img, .fifth-content-text {
-    flex: 1;
-}
 
 #footer {
-    background-image: url(/assets/img/bg_footer.webp);
+    background-image: url(/study/assets/img/bg_footer.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
