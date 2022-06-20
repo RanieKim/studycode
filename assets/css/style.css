@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
     width: 0;
     height: auto;
@@ -57,17 +61,16 @@ button:hover {
     justify-content: right;
 }
 
-.nav-items:last-child {
-    color: red;
-}
-
 .nav-items {
     padding: 16px 8px;
     cursor: pointer;
 }
 
+a {
+    padding: 16px 8px; 
+}
 
-.nav-items:hover {
+.nav-items a:hover {
     padding: 16px 8px;
     cursor: pointer;
     background-color: black;
@@ -75,6 +78,11 @@ button:hover {
     opacity: 0.5;
     transition-property: all;
     transition-duration: 0.3s;
+}
+
+.nav-items > a {
+    text-decoration: none;
+    color: black;
 }
 
 .logo {
@@ -85,6 +93,7 @@ button:hover {
     border-radius: 9999px;
     top: 13px;
     left: 16px;
+    z-index: 50;
 }
 
 .logo:hover {
